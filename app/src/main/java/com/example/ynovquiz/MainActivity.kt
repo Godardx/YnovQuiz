@@ -29,4 +29,14 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun onClickBtnSettings(view: View){
+        val intent = Intent(this, QuizSettings::class.java)
+        startActivity(intent)
+    }
+
+    fun onClickBtnBack(view: View){
+        val intent = Intent (this, MainActivity::class.java)
+        startActivity(intent)
+    }
+
 }

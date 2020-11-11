@@ -13,6 +13,8 @@ C'est une application développée sous AndroidStudio avec le langage Kotlin ell
 L'application est toute simple pour jouer il suffit de cliquer sur le bouton "JOUER".
 Elle regroupe plusieurs petites question qui sont à chaque lancement choisi aléatoirement.
 
+Si vous cliquez sur le boutton "SETTINGS" vous pourrez choisir si vous préférez votre application en mode Dark ou Light. (En cours de développement)
+
 -----------------------
 
 

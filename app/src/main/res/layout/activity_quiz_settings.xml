@@ -4,69 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".QuizSettings">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button3"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="177dp"
-        android:onClick="onClickBtnPlay"
-        android:text="Jouer"
-        android:textSize="20sp"
+        android:text="Dark"
+        app:backgroundTint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button4"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="65dp"
-        android:onClick="onClickBtnSettings"
-        android:text="Settings"
-        android:textSize="20sp"
+        android:layout_marginTop="61dp"
+        android:text="Light"
+        android:textColor="@android:color/black"
+        app:backgroundTint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:gravity="center_horizontal"
-        android:text="Tu n'as pas encore de score ... :("
-        android:textAlignment="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="164dp"
+        android:text="Quelle thème préférez vous ?"
         android:textColor="@android:color/black"
-        android:textSize="16sp"
+        android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="34dp"
+        android:onClick="onClickBtnBack"
+        android:text="Retour"
+        android:textColor="@android:color/white"
+        app:backgroundTint="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="119dp"
-        android:text="Made by Alessio BOVOLENTA et Thomas GODARD"
+        android:text="Fonctionnalité en cours de développement"
         android:textColor="@android:color/black"
-        android:textSize="10sp"
-        android:textStyle="bold|italic"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="YnovQuiz"
-        android:textColor="@android:color/black"
-        android:textSize="50sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

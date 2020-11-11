@@ -22,10 +22,16 @@ class QuizActivity : AppCompatActivity() {
         setContentView(R.layout.activity_quiz)
 
         quizs.add(Quiz("Quelle est la capitale de la France ?", "Paris", "Marseille", "Alger",1 ))
-        quizs.add(Quiz("Quelle est la capitale de l'Espagne ?", "Paris", "Madrid", "Alger",2 ))
-        quizs.add(Quiz("Quelle est la capitale de l'Allemagne ?", "Paris", "Marseille", "Berlin",3 ))
-        quizs.add(Quiz("Quelle est la capitale des USA ?", "Paris", "Marseille", "Washington",3 ))
-        quizs.add(Quiz("Quelle est la capitale du Canada ?", "Ottawa", "Marseille", "Alger",1 ))
+        quizs.add(Quiz("De quelle ville française le cannelé est-il une spécialité ?", "Toulouse", "Marseille", "Bordeaux",3 ))
+        quizs.add(Quiz("Que fête-t-on le 1er mai ?", "Le travail", "Le printemps", "Les mamans",1 ))
+        quizs.add(Quiz("Quel arbre produit la noix de pécan ?", "Le macadamia", "Le noisetier", "Le pacanier",3 ))
+        quizs.add(Quiz("Quel est le nom du principal indice boursier de la place de Paris ?", "Le Dax", "Le CAC 40", "Le Footsie",2 ))
+        quizs.add(Quiz("Quelle est le meilleur smartphone ?", "Apple", "Samsung", "OnePlus", 1))
+        quizs.add(Quiz("Quelle note méritons nous ?", "20", "18", "16", 1))
+        quizs.add(Quiz("Quel groupe a interprété la chanson « Hotel California » ?", "Genesis", "Depeche Mode", "Eagle", 3))
+        quizs.add(Quiz("Quel légume entre dans la composition du tzatziki", "Le concombre", "Le cornichon", "La câpre", 1))
+        quizs.add(Quiz("Dans quel pays est né le tango ?", "Le Brésil", "L’Argentine", "Cuba", 2))
+
 
         quizs.shuffle()
 
@@ -59,7 +65,7 @@ class QuizActivity : AppCompatActivity() {
 
             var alert = AlertDialog.Builder(this)
             alert.setTitle("Partie terminée !")
-            alert.setMessage("Tu as obtenu : " + numberOfGoodAnswers + " de bonne(s) réponse(s)")
+            alert.setMessage("Tu as obtenu : " + numberOfGoodAnswers + " de bonne(s) réponse(s) sur 10 !")
             alert.setPositiveButton("Ok") {dialogInterface: DialogInterface?, i:Int ->
                 finish()
             }
