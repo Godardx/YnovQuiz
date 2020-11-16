@@ -24,4 +24,4 @@ Si vous cliquez sur le boutton "SETTINGS" vous pourrez choisir si vous préfére
 # Voilà notre application !
 
 
-
+By Alessio BOVOLENTA / Thomas GODARD
